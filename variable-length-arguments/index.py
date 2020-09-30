@@ -8,7 +8,7 @@ student("Max", 24, 85, 74, 83, 75)
 student()
 
 
-def student(name="Unknown", age=20, **marks):
+def marks(name="Unknown", age=20, **marks):
     print("Name:", name)
     print("Age:", age)
     print("Marks:--------------")
@@ -16,4 +16,4 @@ def student(name="Unknown", age=20, **marks):
         print(key.capitalize(), ":", value)
 
 
-student("Max", 24, english=85, math=74, physics=83, biology=75)
+marks("Max", 24, english=85, math=74, physics=83, biology=75)

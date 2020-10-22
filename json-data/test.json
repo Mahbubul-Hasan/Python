@@ -1,0 +1,17 @@
+{
+   "name": "Max",
+   "age": 22,
+   "markes": [
+      90,
+      80,
+      70,
+      60,
+      50
+   ],
+   "pass": true,
+   "object": {
+      "color": [
+         "Red, Blue"
+      ]
+   }
+}

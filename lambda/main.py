@@ -1,26 +1,23 @@
 from functools import reduce
+
+
 def double(x):
     return x * 2
+
 
 def add(x, y):
     return x + y
 
+
 def product(x, y, z):
     return x * y * z
 
-Lambda function
-double = lambda x: x * 2
-
-add = lambda x, y: x + y
-
-product = lambda x, y, z: x * y * z
-
-Lambda function
 
 print(double(2))
 print(add(2, 4))
 print(product(2, 4, 6))
 
+# ---------lambda function---------
 my_list1 = [2, 3, 9, 7, 6, 4, 5, 2, 8, 3]
 my_list2 = [5, 7, 5, 3, 1, 9, 5, 4, 7, 1]
 
@@ -38,3 +35,4 @@ print(list(greater_filter))
 
 add_reduce = reduce(lambda x, y: x + y, my_list1)
 print(add_reduce)
+# ---------lambda function---------

@@ -1,20 +1,33 @@
-fileHandling = open("reading-files/test.txt", "r")
+lorem_text = open('./lorem_text.txt', 'r')
 
-# print(fileHandling.read())
-# print(fileHandling.read(4))
 # ------------------------
-# print(fileHandling.readline())
-# print(fileHandling.readline())
-# print(fileHandling.readline())
+# print(lorem_text.read())
 # ------------------------
-# print(fileHandling.readlines())
-# print(fileHandling.readlines()[3])
+# print(lorem_text.read(100))
+# ------------------------
+# lorem_text.seek(5)
+# print(lorem_text.read(100))
+# ------------------------
+# print(lorem_text.readline())
+# print(lorem_text.readline())
+# print(lorem_text.readline())
+# ------------------------
+# print(lorem_text.readlines()[2])
+# ------------------------
+# for line in lorem_text:
+#     print(len(line))
+#     print(line)
+#     print(len(line.split()))
+# ------------------------
 
-for list in fileHandling:
-    # print(list)
-    # print(len(list))
-    # print(list.split(" "))
-    print(len(list.split(" ")))
+lorem_text.close()
+# --------------------------------------------------------------------------------------
 
 
-fileHandling.close()
+def sequence_filter(line):
+    return '>' not in line
+
+
+with open('./dna_sequence.txt') as dna_sequences:
+    lines = dna_sequences.readlines()
+    print(list(filter(sequence_filter, lines)))
